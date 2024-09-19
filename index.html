@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              charcoal: "#6C6868",
+            },
+            fontFamily: {
+              Poppins: ["Poppins", "sans-serif"],
+            },
+            rotate: {
+              15: "15deg",
+              25: "25deg",
+              75: "75deg",
+              "-60": "-60deg",
+              "-30": "-30deg",
+              // Add more custom rotation values as needed
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-black transition-all duration-500 ease-in-out font-Poppins">
+    <main class="p-10">
+      <div
+        class="grid grid-cols md:flex md:h-screen md:justify-center md:items-center transition-all duration-500 ease-in-out"
+      >
+        <div
+          id="card"
+          class="bg-charcoal grid justify-center-center md:max-w-96 md:h-3/4"
+        >
+          <div class="flex justify-center md:justify-start">
+            <h1 class="text-5xl font-black opacity-35 pt-3 md:text-8xl md:p-4">
+              Nike
+            </h1>
+          </div>
+          <img
+            id="main_img"
+            class="scale-75 -rotate-30 md:scale-150 md:-translate-x-8 md:-translate-y-11 md:-rotate-30 transition-all duration-700 ease-in-out"
+            src="black.png"
+            alt=""
+          />
+        </div>
+        <div class="p-5 bg-white md:max-w-96 md:h-3/4">
+          <h1 class="text-3xl font-black md:text-3xl">Jordan Proto-Lyte</h1>
+          <h3 class="mt-2 mb-2 text-sm font-black text-charcoal">
+            RUNNING COLLECTIONS
+          </h3>
+          <p class="text-sm mb-3 font-Poppins md:ml-8 md:p-4">
+            Featuring soft foam cushioning and lightweight, woven fabric in the
+            upper, the Jordan Proto-Lyte is made for all-day, bouncy comfort.
+            Lightweight Breathability: Lightweight woven fabric with real or
+            synthetic leather provides breathable support. Cushioned Comfort: A
+            full-length foam midsole delivers lightweight, plush cushioning.
+            Secure Traction: Exaggerated herringbone- pattern outsole offers
+            traction on a variety of surfaces.
+          </p>
+          <div class="flex gap-3">
+            <h3 class="md:ml-12">Available Colors:</h3>
+            <button
+              onclick="functionblack()"
+              class="rounded-full overflow-hidden border-2 border-transparent hover:border-gray-500"
+            >
+              <img src="circle-black.4png.png" alt="" />
+            </button>
+            <button
+              onclick="functionred() "
+              class="rounded-full overflow-hidden border-2 border-transparent hover:border-gray-500"
+            >
+              <img src="circle-16.png" alt="" />
+            </button>
+            <button
+              onclick="functionorange('')"
+              class="rounded-full overflow-hidden border-2 border-transparent hover:border-gray-500"
+            >
+              <img src="circle-orange (1).png" alt="" />
+            </button>
+          </div>
+          <div class="mt-2 flex justify-between md:pt-4 md:mt-6">
+            <h1 class="font-black text-gray-500 text-3xl">Rs.12,220</h1>
+            <button
+              class="rounded-full bg-black text-white p-2 font-Poppins text-sm"
+            >
+              BUY NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
